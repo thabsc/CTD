@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <img src="https://scontent.faru4-1.fna.fbcdn.net/v/t1.6435-9/89706508_101777964789613_8307359304797650944_n.png?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=y9efYsU81vMAX8KEhk7&_nc_ht=scontent.faru4-1.fna&oh=811a290e92cefb55c2cb752148efe133&oe=61B12A96">
+
+    <form class="formulario">
+
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite o seu nome">
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="fulano@gmail.com">
+        </div>
+
+        <div>
+            <label for="socialNumber">CPF</label>
+            <input type="number" id="socialNumber" maxlength="11" name="socialNumber">
+        </div>
+
+        <div>
+            <label for="birthDate">Data de nascimento</label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+
+
+        <div>
+            <label for="city">Cidade</label>
+            <select name="city" id="city">
+                <option value="saoPaulo">São Paulo</option>
+                <option value="portoAlegre">Tupã</option>
+                <option value="portoAlegre">Herculândia</option>
+                <option value="portoAlegre">Queiroz</option>
+                <option value="portoAlegre">Marília</option>
+            </select>
+        </div>
+
+        <div>
+        <label for="comments">Deixe seu recado:</label>
+
+        <div>
+            <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+        </div>
+        </div>
+
+        <button type="submit">Salvar formulário</button>
+        <button type="reset">Limpar</button>
+        
+
+    </form>
+
+
+</body>
+</html>
