@@ -1,0 +1,36 @@
+@keyframes bola{
+    0%{opacity: 0%;}
+    25%{transform: translateY(-20px); opacity: 25%}   
+    50%{opacity: 50%;}   
+    75%{transform: translateY(-10px); opacity: 75%}   
+    100%{transform: translateX(600px); opacity: 100%}
+}
+
+.bola{animation: bola 4s infinite;}
+
+
+.timao:hover{
+    transform: rotate(90deg);
+}
+
+section{   
+    width: 400px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+button{
+    background-color:#020300;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border: none;  
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: #ffffff;
+    color:black;
+}
