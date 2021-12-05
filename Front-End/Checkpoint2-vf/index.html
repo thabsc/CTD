@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Tupã-SP</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://www.tupa.sp.gov.br/admin/globalarq/noticia/noticia/651_366/foto-padrao.png">
+    </header>
+
+    <aside class="asidepr">
+        <ul>
+            <li> Início</li>
+            <li> Sobre</li>
+            <li> Contato</li>
+        </ul>
+    </aside>
+
+    <main>
+        <section>
+            <div>
+                <img class="principal" src="https://www.guiadoturismobrasil.com/up/img/1442943277.jpg">
+            </div>
+                <h1>Bem vindo à Tupã!</h1>
+                
+                <p> Tupã, no interior de São Paulo, é um destino para quem se encanta pelos traços do passado. A começar pelo nome, que quer dizer “espírito bom”, evocado pelos indígenas ocupantes da região onde está instalado o município. A fim de deixar viva a rica história dos nativos, a cidade conta com espaços capazes de representar as comunidades indígenas.</p>
+                <p> O Museu Histórico e Pedagógico Índia Vanuíre é um deles. Considerado um dos mais importantes acervos etnográficos do país, o local tem 38 mil peças diferentes sobre os indígenas, desde os Kayapó aos Yanomámi – incluindo os Kaingang e Krenak. Muitos destes povos indígenas ainda vivem na região.</p>
+                <p> A cidade foi escolhida por muitos imigrantes responsáveis pelo crescimento populacional e econômico.  Entre eles estão os japoneses, os portugueses, os espanhóis, os sírios e os letos. Esses últimos, aliás, têm parte de suas trajetórias contadas no Museu Janis Edirberg, criado em 1941, composto por 150 itens.</p>
+                <p> Além de todo o acervo cultural, Tupã também é um destino para quem gosta de ter contato com o verde. A Fazenda Palma é uma boa dica. Com uma área de área de 303 alqueires e reserva nativa, ela conta com cachoeiras, trilha ecológica e casas típicas dos letos.</p>
+                <p> Tupã, definitivamente, reúne a tranquilidade das pequenas cidades, a volta ao passado e variedades de opções na hora do lazer.</p>
+                <p> Preencha nosso formulário para ganhar um tour exclusivo!</p>
+
+                <form class="formulario">
+
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Digite o seu nome">
+                    </div>
+            
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="fulano@gmail.com">
+                    </div>
+            
+                    <div>
+                        <label for="socialNumber">Telefone</label>
+                        <input type="number" id="socialNumber" maxlength="11" name="socialNumber">
+                    </div>
+            
+                    <div>
+                        <label for="birthDate">Data de nascimento</label>
+                        <input type="date" id="birthDate" name="birthDate">
+                    </div>
+                    <div class="idade">
+                        <label for="idade">Maior de 18 anos?</label>
+                        <input
+                          type="radio"
+                          class="opt__idade"
+                          id="idade"
+                          name="idade"
+                          value="Sim"
+                        />
+                        <label for="">Sim</label>
+                        <input
+                          type="radio"
+                          class="opt__idade"
+                          id="idade"
+                          name="idade"
+                          value="Não"
+                        />
+                        <label for="">Não</label>
+                      </div>
+            
+            
+                      <label class="interesse" for="interesse"
+                      >Qual o seu interesse em nossa cidade?</label
+                    >
+                    <select class="slc__interesse" name="interesse" id="interesse">
+                      <optgroup label="Tupãs">
+                        <option value="pico">Praça da Bandeira</option>
+                        <option value="locais historicos">Praça da Imigração</option>
+                        <option value="universidades">Museu Índia Vanuíre</option>
+                      </optgroup>
+                    </select>
+            
+                    <div>
+                        <label for="city">Lugar que gostaria de conhecer?</label>
+                        <select class="lugar" name="city" id="city">
+                            <option value="praça1">Praça da Imigração</option>
+                            <option value="praça2">Praça da Bandeira</option>
+                            <option value="museu">Museu Índia Vanuíre</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                    <label for="comments">Quais são seus interesses na cidade?</label>
+            
+                    <div>
+                        <textarea class="texto" name="comments" id="comments" cols="50" rows="10"></textarea>
+                    </div>
+                    </div>
+            
+                    <div class="objetivo">
+                        <label for="">Qual seu objetivo na cidade?</label>
+                        <div>
+                          <input class="obj__input" type="checkbox" name="Turismo" />
+                          <label for="turismo"> Turismo</label>
+                          <input class="obj__input" type="checkbox" name="Residente" />
+                          <label for="turismo"> Residente</label>
+                          <input class="obj__input" type="checkbox" name="Estudante" />
+                          <label for="turismo">Estudante</label>
+                        </div>
+                      </div>
+            
+                    <button class= "scaled" type="submit">Salvar formulário</button>
+                    <button type="reset">Limpar</button>
+                    
+            
+                </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/PrefeituraTupa" target="blank"><img src="https://image.flaticon.com/icons/png/512/1384/1384005.png" alt="logo facebook" ></a>
+        <a href="https://www.instagram.com/prefeituratupa/?hl=en" target="blank"><img src="https://image.flaticon.com/icons/png/512/1384/1384015.png" alt="logo instagram" ></a>
+        <a href="https://www.youtube.com/channel/UCIwdyQ6D5pFCzLN8oOavdyg" target="blank"><img src="https://image.flaticon.com/icons/png/512/49/49399.png" alt="logo youtube" ></a>
+    </footer>
+</body>
+</html>
