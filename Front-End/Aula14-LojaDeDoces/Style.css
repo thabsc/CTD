@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6D3A3;
+}
+
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+
+main{
+    width: 80%;
+    display: flex;;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+main .products, .complements{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-height: 400px;
+}
+
+main .complements{
+    flex-direction: column;
+}
+
+main .products div{
+    display: flex;
+    width: 48%;
+    height: 180px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;   
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 3px rgb(160, 159, 159);
+    position: relative;
+    
+}
+
+main .products div h2{
+    color: rgba(253, 253, 253, 0.733);
+    text-shadow: 1px 1px 1px #f59d9d;
+    font-size: 28px;
+}
+
+main .products .candy-1{
+    background-image: url('https://scontent.faru4-2.fna.fbcdn.net/v/t1.6435-9/126024028_3431000223622034_4029007219264180984_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_ohc=8I3uOObBJoMAX9D7JWP&_nc_ht=scontent.faru4-2.fna&oh=761de647f0f9fc53a4c722342587d0f2&oe=61B814B6');
+    
+}
+main .products .candy-2{
+    background-image: url('https://scontent.faru4-2.fna.fbcdn.net/v/t1.6435-9/126355538_3431000246955365_1718497076753124289_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a26aad&_nc_ohc=UbBBKHG1buQAX84kLRN&_nc_ht=scontent.faru4-2.fna&oh=3c209d2614ed99b18a47c63bd0c433e9&oe=61BA990A');
+}
+main .products .candy-3{
+    background-image: url('https://scontent.faru4-1.fna.fbcdn.net/v/t1.6435-9/126521670_3431000230288700_7706728204945246506_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=a26aad&_nc_ohc=28hm4Mdd1CwAX8Ly9s2&_nc_ht=scontent.faru4-1.fna&oh=27890e5510e83f947c7512508044895c&oe=61B83A13');
+}
+main .products .candy-4{
+    background-image: url('https://scontent.faru4-1.fna.fbcdn.net/v/t39.30808-6/218563706_4091029474285769_421539022543734337_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=hQ_d2aQ7GhQAX_JJYIh&tn=1MrFhMEUVOz3xd68&_nc_ht=scontent.faru4-1.fna&oh=fe9f4ead051b1048e637770e99d7bf05&oe=6198DE0A');
+}
+
+main .products .candy-5{
+    background-image: url('https://scontent.faru4-2.fna.fbcdn.net/v/t39.30808-6/217210306_4091028747619175_8284812980426033629_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=eIec0W3FIcQAX859KUR&_nc_ht=scontent.faru4-2.fna&oh=a0d400b5ba5b2bbededc9ccb1ae7684d&oe=619A2D31');
+}
+
+main .products .candy-6{
+    background-image: url('https://scontent.faru4-2.fna.fbcdn.net/v/t31.18172-8/21687197_1441808352541241_1005902565795502940_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=ntg95L5vT5EAX9aP2dQ&_nc_ht=scontent.faru4-2.fna&oh=29dd75c1dfae8918be789bb52e83b3fd&oe=61BB7ABF');
+}
+
+.option-candy{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: scale(2);
+}
+
+.description{
+    display: none;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.candy-1:hover .description{
+    display: block;
+}
+
+.candy-2:hover .description{
+    display: block;
+}
+.candy-3:hover .description{
+    display: block;
+}
+.candy-4:hover .description{
+    display: block;
+}
+
+.candy-5:hover .description{
+    display: block;
+}
+
+.candy-6:hover .description{
+    display: block;
+}
+
+form{
+    width:90%;
+}
+
+legend{
+    font-size: 22px;
+    color: rgb(138, 106, 0);
+    font-weight: bold;
+    text-shadow: 1px 1px #664900;
+}
+
+.box-1, .box-2, .box-3{
+ 
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 0 4px 1px #666;
+}
+
+
+#qtd, #pagto, #nome, #cpf, #email, #cep{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #664900;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #02a84d;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 4px 1px #666;
+}
+
+.reset{
+    background-color:#c91d26;
+}
+
+hgroup{
+    box-shadow: 0 0 5px 1px #441002;
+    border-radius: 50%;
+}
+
+hgroup h1{
+    color: #441002;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+hgroup h3{
+    font-size: 14px;
+    text-align: center;
+}
